@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Customers</title>
+</head>
+<body>
+<h2>Customer List</h2>
+
+<a th:href="@{/customers/new}">Add Customer</a>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Street</th>
+        <th>City</th>
+        <th>Postal Code</th>
+        <th>Email Ⓜ️</th>
+        <th>SMS 📱</th>
+        <th>Push 🔔</th>
+        <th>Actions</th>
+    </tr>
+    <tr th:each="customer : ${customers}">
+        <td th:text="${customer.id}"></td>
+        <td th:text="${customer.name}"></td>
+        <td th:text="${customer.email}"></td>
+        <td th:text="${customer.phone}"></td>
+        <td th:text="${customer.address?.street}">N/A</td>
+        <td th:text="${customer.address?.city}">N/A</td>
+        <td th:text="${customer.address?.postalCode}">N/A</td>
+        <td th:text="${customer.notificationPreference?.emailEnabled ? '✔️' : '❌'}">❌</td>
+        <td th:text="${customer.notificationPreference?.smsEnabled ? '✔️' : '❌'}">❌</td>
+        <td th:text="${customer.notificationPreference?.pushEnabled ? '✔️' : '❌'}">❌</td>
+        <td>
+            <a th:href="@{'/customers/edit/' + ${customer.id}}">Edit</a>
+            <a th:href="@{'/customers/delete/' + ${customer.id}}"
+               onclick="return confirm('Are you sure?')">Delete</a>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

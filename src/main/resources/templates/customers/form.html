@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Customer Form</title>
+</head>
+<body>
+<h2 th:text="${customer.id != null ? 'Edit' : 'Create'} + ' Customer'"></h2>
+
+<form th:action="@{${customer.id != null} ? '/customers/update/' + ${customer.id} : '/customers'}"
+      th:object="${customer}" method="post">
+    <label>Name:</label>
+    <input type="text" th:field="*{name}" />
+    <div th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div>
+    <br/>
+
+    <label>Email:</label>
+    <input type="email" th:field="*{email}" />
+    <div th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
+    <br/>
+
+    <label>Phone:</label>
+    <input type="text" th:field="*{phone}" />
+    <div th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}"></div>
+    <br/>
+
+    <h3>Address</h3>
+
+    <label>Street:</label>
+    <input type="text" th:field="*{address.street}" />
+    <br/>
+
+    <label>City:</label>
+    <input type="text" th:field="*{address.city}" />
+    <br/>
+
+    <label>Postal Code:</label>
+    <input type="text" th:field="*{address.postalCode}" />
+    <br/>
+
+    <h3>Notification Preferences</h3>
+
+    <label>
+        <input type="checkbox" th:field="*{notificationPreference.emailEnabled}" />
+        Email
+    </label><br/>
+
+    <label>
+        <input type="checkbox" th:field="*{notificationPreference.smsEnabled}" />
+        SMS
+    </label><br/>
+
+    <label>
+        <input type="checkbox" th:field="*{notificationPreference.pushEnabled}" />
+        Push Notification
+    </label><br/>
+
+
+
+    <button type="submit">Submit</button>
+</form>
+
+<a th:href="@{/customers}">Back to list</a>
+</body>
+</html>
