@@ -32,6 +32,31 @@ A Spring Boot application built as part of a Java internship. It allows **admin 
 
 ---
 
+## 🔍 UI Preview
+
+### 🔐 Login Page
+![Login](![chrome_smuYJPirxM](https://github.com/user-attachments/assets/f8f5fdb1-18f5-4667-9d88-b30e83c183a9)
+)
+
+### 🏠 Dashboard
+![Dashboard](screenshots/dashboard.png)
+![chrome_IxMpE9kRHO](https://github.com/user-attachments/assets/bf670473-5e25-451e-a879-75f34459fc1d)
+
+### ➕ Create Customer
+![Create Customer](screenshots/create_customer.png)
+![chrome_wnM89Z0cEw](https://github.com/user-attachments/assets/82550d56-62e0-4909-ae5c-1d889b7b6a0f)
+
+### ✏️ Edit Customer
+![Edit Customer](screenshots/edit_customer.png)
+![chrome_CV5VfgmKX4](https://github.com/user-attachments/assets/4de03664-7736-4c54-9c1c-3702c5a9c966)
+
+### 📋 Customer List
+![Customer List](screenshots/customer_list.png)
+![chrome_9pN0LHO2qi](https://github.com/user-attachments/assets/bca256e9-bd88-43da-a202-1af26ea15041)
+
+
+--
+
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Clone the Repository
