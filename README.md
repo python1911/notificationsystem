@@ -31,23 +31,22 @@ A Spring Boot application built as part of a Java internship. It allows **admin 
 -  Thymeleaf UI templates
 
 ---
-
 ## 🔍 UI Preview
 
 ### 🔐 Login Page
-![Login](screenshots/login.png)
+![Login](./screenshots/login.png)
 
 ### 🏠 Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](./screenshots/dashboard.png)
 
 ### ➕ Create Customer
-![Create Customer](screenshots/create_customer.png)
+![Create Customer](./screenshots/create_customer.png)
 
 ### ✏️ Edit Customer
-![Edit Customer](screenshots/edit_customer.png)
+![Edit Customer](./screenshots/edit_customer.png)
 
 ### 📋 Customer List
-![Customer List](screenshots/customer_list.png)
+![Customer List](./screenshots/customer_list.png)
 
 ---
 
