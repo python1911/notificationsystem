@@ -34,19 +34,19 @@ A Spring Boot application built as part of a Java internship. It allows **admin 
 ## 🔍 UI Preview
 
 ### 🔐 Login Page
-![Login](./screenshots/login.png)
+![Login](notificationsystem/screenshots/login.png)
 
 ### 🏠 Dashboard
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](notificationsystem/screenshots/dashboard.png)
 
 ### ➕ Create Customer
-![Create Customer](./screenshots/create_customer.png)
+![Create Customer](notificationsystem/screenshots/create_customer.png)
 
 ### ✏️ Edit Customer
-![Edit Customer](./screenshots/edit_customer.png)
+![Edit Customer](notificationsystem/screenshots/edit_customer.png)
 
 ### 📋 Customer List
-![Customer List](./screenshots/customer_list.png)
+![Customer List](notificationsystem/screenshots/customer_list.png)
 
 ---
 
